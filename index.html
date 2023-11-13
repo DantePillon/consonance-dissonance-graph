@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Audio API Practice</title>
+    <link rel="stylesheet" href="style.css" id="style-sheet">
+</head>
+
+<body>
+    <table id="legend">
+        <!-- <tr>
+            <th>
+                Dissonance/Consonance
+            </th>
+            <th>
+                Ratios
+            </th>
+        </tr> -->
+        <tr>
+            <td><span class="dissonance-level-1 dissonance-level-icon"></span></td>
+            <td>2:3, 3:4</td>
+        </tr>
+        <tr>
+            <td><span class="dissonance-level-2 dissonance-level-icon"></span></td>
+            <td>4:5, 5:8</td>
+        </tr>
+        <tr>
+            <td><span class="dissonance-level-3 dissonance-level-icon"></span></td>
+            <td>3:5, 5:6</td>
+        </tr>
+        <tr>
+            <td><span class="dissonance-level-4 dissonance-level-icon"></span></td>
+            <td>8:9; 9:16</td>
+        </tr>
+        <tr>
+            <td><span class="dissonance-level-5 dissonance-level-icon"></span></td>
+            <td>15:16, 8:15</td>
+        </tr>
+        <tr>
+            <td><span class="dissonance-level-6 dissonance-level-icon"></span></td>
+            <td><span>32:45</span></td>
+        </tr>
+    </table>
+    <ol id="node-list"></ol>
+    <ol id="link-list"></ol>
+    <div id="dashboard">
+        <div id="keyboard">
+            <div id="white-note-container">
+                <button id="c3" class="white-note note" data-note-Letter="C"></button>
+                <button id="d3" class="white-note note" data-note-letter="D"></button>
+                <button id="e3" class="white-note note" data-note-letter="E"></button>
+                <button id="f3" class="white-note note" data-note-letter="F"></button>
+                <button id="g3" class="white-note note" data-note-letter="G"></button>
+                <button id="a3" class="white-note note" data-note-letter="A"></button>
+                <button id="b3" class="white-note note" data-note-letter="B"></button>
+                <button id="c4" class="white-note note" data-note-letter="C"></button>
+                <button id="d4" class="white-note note" data-note-letter="D"></button>
+                <button id="e4" class="white-note note" data-note-letter="E"></button>
+                <button id="f4" class="white-note note" data-note-letter="F"></button>
+                <button id="g4" class="white-note note" data-note-letter="G"></button>
+                <button id="a4" class="white-note note" data-note-letter="A"></button>
+                <button id="b4" class="white-note note" data-note-letter="B"></button>
+                <button id="c5" class="white-note note" data-note-letter="C"></button>
+            </div>
+            <div id="black-note-container" class="note-container">
+                <button id="c#3" class="black-note note" data-note-letter="C#"></button>
+                <button id="d#3" class="black-note note" data-note-letter="D#"></button>
+                <span class="black-note spacer"></span>
+                <button id="f#3" class="black-note note" data-note-letter="F#"></button>
+                <button id="g#3" class="black-note note" data-note-letter="G#"></button>
+                <button id="a#3" class="black-note note" data-note-letter="A#"></button>
+                <span class="black-note spacer"></span>
+                <button id="c#4" class="black-note note" data-note-letter="C#"></button>
+                <button id="d#4" class="black-note note" data-note-letter="D#"></button>
+                <span class="black-note spacer"></span>
+                <button id="f#4" class="black-note note" data-note-letter="F#"></button>
+                <button id="g#4" class="black-note note" data-note-letter="G#"></button>
+                <button id="a#4" class="black-note note" data-note-letter="A#"></button>
+                <span class="black-note spacer"></span>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,162 @@
+body {
+    background: grey;
+    text-align: center;
+}
+
+#legend {
+    position: absolute;
+    /* border-collapse: separate; */
+    border-collapse: collapse;
+    border-spacing: 0;
+    padding: 10px;
+}
+
+td {
+    border: solid 4px white;
+    /* border-radius: 30%; */
+    padding: 5px;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 700;   
+}
+
+/*
+
+table td {
+    border-top: 0;
+    border-left: 0;
+    text-align: left;
+}
+
+table tr:first-child td {
+    border-top: solid 1px;
+}
+
+table tr td:first-child {
+    border-left: solid 1px;
+}
+
+table tr:first-child td:first-child {
+    border-top-left-radius: 20%;
+}
+
+table tr:first-child td:last-child {
+    border-top-right-radius: 20%;
+}
+
+table tr:last-child td:first-child {
+    border-bottom-left-radius: 20%;
+}
+    
+table tr:last-child td:last-child {
+    border-bottom-right-radius: 20%;
+}
+
+*/
+
+.dissonance-level-icon {
+    display: inline-block;
+    /* border-radius: 30%; */
+    width: 20px;
+    height: 20px;
+}
+
+#link-list {
+
+}
+
+.node {
+    list-style-type: none;
+    background-color: white;
+    padding: 30px 50px;
+    position: absolute;
+    border-radius: 100%;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 50px;
+    left: 700px;
+    top: 200px;
+}
+
+.node:hover {
+    cursor: grab;
+}
+
+.node:active {
+    cursor: grabbing;
+}
+
+.link {
+    list-style-type: none;
+    position: absolute;
+    z-index: -1;
+    background-size: contain;
+    
+}
+
+#dashboard {
+    background-color: #643700;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#keyboard {
+    height: 153px;
+    width: 506px;
+    margin: 50px;
+    position: relative;
+    display: flex;
+}
+
+#white-note-container {
+    position: absolute;
+}
+
+#black-note-container {
+    position: absolute;
+    left: 15px;
+}
+
+.white-note {
+    height: 150px;
+    width: 30px;
+    background-color: rgb(255, 255, 240);
+    border: none;
+}
+
+.black-note {
+    top: -1px; /* Why does this need to be here? no clue at all */
+    height: 100px;
+    width: 25px;
+    margin-left: 5px;
+    position: relative;
+    background-color: rgb(20, 10, 0);
+    border: none;
+}
+
+.white-note.selected {
+    background-color: #85cceb;
+    filter: drop-shadow(0 0 4px rgb(13, 109, 150));
+}
+
+.black-note.selected {
+    background-color: #0c222c;
+    filter: drop-shadow(0 0 4px rgb(0, 21, 30));
+}
+
+.note:active {
+    filter: contrast(80%);
+}
+
+.spacer {
+    display: inline-block;
+    width: 25px;
+    opacity: 0;
+}
